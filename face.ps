@@ -1,0 +1,140 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 0 -500 700 800
+% Demonstrate shading and width in drawing lines and filling shapes
+% Define an operator box which builds a path for a one inch square box
+% Note that box does not draw or fill the box.
+/ellipse {
+%  moveto                                % Current point is on stack
+    gsave
+    translate	
+  newpath
+  gsave	
+  scale                                 % set x-y scale for ellipse
+  0 0 10 0 360 arc
+%  closepath                             % Bottom
+    stroke
+  grestore
+  grestore
+} def
+
+/mouth {
+    gsave
+   translate
+   newpath
+   scale
+   0 0 10 180 0 arc
+   stroke
+   grestore
+   grestore
+
+} def
+
+/face {
+    gsave
+    translate
+    gsave
+    headsquat 1 scale
+    10 10 0 0 ellipse
+    grestore
+    gsave
+    -30 30 translate
+    eyeangle rotate
+    eyesquint 1 0 0  ellipse
+    grestore
+    gsave
+    30 30 translate
+    -1 eyeangle mul rotate
+    eyesquint 1 0 0 ellipse
+    grestore
+    5 smile 0 -40 mouth
+    
+    grestore
+    0 200 translate
+} def
+
+0 setgray
+%50 50 1 1 ellipse
+%10 10 150 140 ellipse
+%2 1 185 155 ellipse
+%2 1 115 155 ellipse
+%1 1 150 125 ellipse
+%5 1 150 90 ellipse
+
+%/smile -2 def
+%150 500 face
+
+
+150 100 moveto 
+%2 150 100 face
+%2 150 100 face
+/headsquat 1 def
+/eyeangle -10 def
+/eyesquint 2 def
+/smile 3 def
+2 100 100 face
+
+/headsquat 1 def
+/eyeangle 10 def
+/eyesquint .5 def
+/smile -1 def
+2 400 100 face
+
+/headsquat .51 def
+/eyeangle 10 def
+/eyesquint .8 def
+/smile -3 def
+2 100 400 face
+
+/j 0 def
+0 1 500 {              % Go from 0 to 360 degrees in 10 degree steps
+   /j 1 j add  def
+0 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+1 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+} for                   % Iterate over angles
+
+0 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+   /j 1 j add  def
+0 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+0 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+} for                   % Iterate over angles
+
+0 setgray
+/headsquat 1 def
+/eyeangle 0 def
+/eyesquint 1 def
+/smile j 150 div def
+2 400 400 face
+
+
+showpage

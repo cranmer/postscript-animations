@@ -1,0 +1,635 @@
+%!PS-Adobe-2.0
+%%BoundingBox: 0 -500 700 800
+% Demonstrate shading and width in drawing lines and filling shapes
+% Define an operator box which builds a path for a one inch square box
+% Note that box does not draw or fill the box.
+/ellipse {
+%  moveto                                % Current point is on stack
+    gsave
+    translate
+  newpath
+  gsave
+  scale                                 % set x-y scale for ellipse
+  0 0 10 0 360 arc
+%  closepath                             % Bottom
+    stroke
+  grestore
+  grestore
+} def
+ 
+/mouth {
+    gsave
+   translate
+   newpath
+   scale
+   0 0 10 180 0 arc
+   stroke
+   grestore
+   grestore
+                                                                                
+} def
+                                                                                
+/face {
+    gsave
+    translate
+    gsave
+    headsquat 1 scale
+    10 10 0 0 ellipse
+    grestore
+    gsave
+    -30 30 translate
+    eyeangle rotate
+    eyesquint 1 0 0  ellipse
+    grestore
+    gsave
+    30 30 translate
+    -1 eyeangle mul rotate
+    eyesquint 1 0 0 ellipse
+    grestore
+    5 smile 0 -40 mouth
+                                                                                
+    grestore
+%    0 200 translate
+} def
+
+400 200 moveto
+/headsquat 0.4004 def
+/eyeangle 0.670879747627 def
+/smile 0.20152 def
+/eyesquint 0.0627070475782 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.632255555556 def
+/eyeangle 0.818416504588 def
+/smile 0.07484 def
+/eyesquint 0.307837490928 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.451877777778 def
+/eyeangle 0.607304006152 def
+/smile 0.26168 def
+/eyesquint 0.164534380168 def
+2 200.000000 500.000000  face
+
+/headsquat 0.798877777778 def
+/eyeangle 0.791288137402 def
+/smile 0.0238 def
+/eyesquint 0.602656107512 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.5799 def
+/eyeangle 0.78789128334 def
+/smile 0.37556 def
+/eyesquint 0.0275974671321 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.352266666667 def
+/eyeangle 0.672998563498 def
+/smile 0.32656 def
+/eyesquint 0.404158062488 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.640744444444 def
+/eyeangle 0.819995967337 def
+/smile 0.09772 def
+/eyesquint 0.436784825821 def
+2 200.000000 500.000000  face
+
+/headsquat 0.699088888889 def
+/eyeangle 0.866921491757 def
+/smile 0.16508 def
+/eyesquint 0.438344544264 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.632633333333 def
+/eyeangle 0.780636871212 def
+/smile 0.13528 def
+/eyesquint 0.219411004546 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.785388888889 def
+/eyeangle 0.857062391044 def
+/smile 0.24748 def
+/eyesquint 0.0207219735906 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.8063 def
+/eyeangle 0.905329840122 def
+/smile 0.00808 def
+/eyesquint 0.176280014969 def
+2 200.000000 500.000000  face
+
+/headsquat 0.602677777778 def
+/eyeangle 0.776323384806 def
+/smile 0.09112 def
+/eyesquint 0.156290154116 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.410966666667 def
+/eyeangle 0.790541158681 def
+/smile 0.2114 def
+/eyesquint 0.0921188810616 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.527333333333 def
+/eyeangle 0.667280092805 def
+/smile 0.3708 def
+/eyesquint 0.227145934781 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.401733333333 def
+/eyeangle 0.655118195591 def
+/smile 0.0152 def
+/eyesquint 0.565795822692 def
+2 200.000000 500.000000  face
+
+/headsquat 0.373511111111 def
+/eyeangle 0.692094248642 def
+/smile 0.34384 def
+/eyesquint 0.111726770051 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.380622222222 def
+/eyeangle 0.638665309033 def
+/smile 0.1238 def
+/eyesquint 0.0917687401868 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.476233333333 def
+/eyeangle 0.763986550278 def
+/smile 0.40736 def
+/eyesquint 0.0363509890022 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.568177777778 def
+/eyeangle 0.724411092019 def
+/smile 0.149 def
+/eyesquint 0.104246487725 def
+2 200.000000 500.000000  face
+
+/headsquat 0.612533333333 def
+/eyeangle 0.882131828151 def
+/smile 0.12116 def
+/eyesquint 0.375351017788 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.452888888889 def
+/eyeangle 0.709534475365 def
+/smile 0.17564 def
+/eyesquint 0.00945380361966 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.406111111111 def
+/eyeangle 0.653784038706 def
+/smile 0.03408 def
+/eyesquint 0.14721832236 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.543611111111 def
+/eyeangle 0.759736837494 def
+/smile 0.08952 def
+/eyesquint 0.172237479414 def
+2 200.000000 500.000000  face
+
+/headsquat 0.392833333333 def
+/eyeangle 0.675854833106 def
+/smile 0.29636 def
+/eyesquint 0.0988352196601 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.490633333333 def
+/eyeangle 0.670335191617 def
+/smile 0.1746 def
+/eyesquint 0.252865373584 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.568088888889 def
+/eyeangle 0.755083475385 def
+/smile 0.00624 def
+/eyesquint 0.152406773505 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.818122222222 def
+/eyeangle 0.910789177473 def
+/smile 0.10248 def
+/eyesquint 0.412274964585 def
+2 200.000000 500.000000  face
+
+/headsquat 0.3701 def
+/eyeangle 0.584539297001 def
+/smile 0.25284 def
+/eyesquint 0.132735222539 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.722977777778 def
+/eyeangle 0.906196769292 def
+/smile 0.2268 def
+/eyesquint 0.419818908888 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.638988888889 def
+/eyeangle 0.77847694314 def
+/smile 0.15784 def
+/eyesquint 0.0896042329607 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.4562 def
+/eyeangle 0.631765470889 def
+/smile 0.0554 def
+/eyesquint 0.553190751199 def
+2 200.000000 500.000000  face
+
+/headsquat 0.703166666667 def
+/eyeangle 0.798934092235 def
+/smile 0.07044 def
+/eyesquint 0.510473564473 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.508155555556 def
+/eyeangle 0.735271741983 def
+/smile 0.13344 def
+/eyesquint 0.183441987408 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.3725 def
+/eyeangle 0.601720366606 def
+/smile 0.54852 def
+/eyesquint 0.607812727668 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.479933333333 def
+/eyeangle 0.650250638492 def
+/smile 0.05648 def
+/eyesquint 0.388720033008 def
+2 200.000000 500.000000  face
+
+/headsquat 0.389255555556 def
+/eyeangle 0.802501970125 def
+/smile 0.16112 def
+/eyesquint 0.270308755347 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.600233333333 def
+/eyeangle 0.830428562207 def
+/smile 0.3048 def
+/eyesquint 0.0012095775675 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.659688888889 def
+/eyeangle 0.832076071462 def
+/smile 0.16884 def
+/eyesquint 0.265820585952 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.5868 def
+/eyeangle 0.731760697262 def
+/smile 0.379 def
+/eyesquint 0.0332633831062 def
+2 200.000000 500.000000  face
+
+/headsquat 0.470933333333 def
+/eyeangle 0.658117443266 def
+/smile 0.33024 def
+/eyesquint 0.348422001417 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.588511111111 def
+/eyeangle 0.695332484628 def
+/smile 0.08852 def
+/eyesquint 0.859659509617 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.4781 def
+/eyeangle 0.720819339529 def
+/smile 0.09636 def
+/eyesquint 0.182455226761 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.615511111111 def
+/eyeangle 0.893616368592 def
+/smile 0.26916 def
+/eyesquint 0.146040575781 def
+2 200.000000 500.000000  face
+
+/headsquat 0.670355555556 def
+/eyeangle 0.825466842245 def
+/smile 0.15128 def
+/eyesquint 0.295741715253 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.690466666667 def
+/eyeangle 0.808438176939 def
+/smile 0.2126 def
+/eyesquint 0.0676408508141 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.446011111111 def
+/eyeangle 0.726000565926 def
+/smile 0.02528 def
+/eyesquint 0.580660894376 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.742922222222 def
+/eyeangle 0.898010144188 def
+/smile 0.412 def
+/eyesquint 0.208747623359 def
+2 200.000000 500.000000  face
+
+/headsquat 0.814 def
+/eyeangle 0.840139367804 def
+/smile 0.1654 def
+/eyesquint 0.0012095775675 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.377811111111 def
+/eyeangle 0.777895981014 def
+/smile 0.16712 def
+/eyesquint 0.0445315530771 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.534433333333 def
+/eyeangle 0.787692260644 def
+/smile 0.54208 def
+/eyesquint 0.108957474041 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.578022222222 def
+/eyeangle 0.86939746585 def
+/smile 0.42188 def
+/eyesquint 0.863893031103 def
+2 200.000000 500.000000  face
+
+/headsquat 0.509022222222 def
+/eyeangle 0.674654289447 def
+/smile 0.01616 def
+/eyesquint 0.392316934722 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.467466666667 def
+/eyeangle 0.726105077568 def
+/smile 0.08216 def
+/eyesquint 0.422620035886 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.402044444444 def
+/eyeangle 0.671101473026 def
+/smile 0.20052 def
+/eyesquint 0.00442450741795 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.626555555556 def
+/eyeangle 0.840559570874 def
+/smile 0.23116 def
+/eyesquint 0.120321136977 def
+2 200.000000 500.000000  face
+
+/headsquat 0.4945 def
+/eyeangle 0.678317287817 def
+/smile 0.19664 def
+/eyesquint 0.106474656928 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.383244444444 def
+/eyeangle 0.657837954205 def
+/smile 0.42988 def
+/eyesquint 0.243602555896 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.697088888889 def
+/eyeangle 0.820918527158 def
+/smile 0.49292 def
+/eyesquint 0.0488923985178 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.623088888889 def
+/eyeangle 0.8280214435 def
+/smile 0.0008 def
+/eyesquint 0.270181431393 def
+2 200.000000 500.000000  face
+
+/headsquat 0.754511111111 def
+/eyeangle 0.876583233049 def
+/smile 0.59568 def
+/eyesquint 0.948849939725 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.860266666667 def
+/eyeangle 0.942068245651 def
+/smile 0.53312 def
+/eyesquint 0.867203453919 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.463011111111 def
+/eyeangle 0.752466732806 def
+/smile 0.03388 def
+/eyesquint 0.615102024062 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.718244444444 def
+/eyeangle 0.870478231393 def
+/smile 0.12948 def
+/eyesquint 0.401006794614 def
+2 200.000000 500.000000  face
+
+/headsquat 0.614044444444 def
+/eyeangle 0.770726089048 def
+/smile 0.36092 def
+/eyesquint 0.796856969073 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.387588888889 def
+/eyeangle 0.682007986571 def
+/smile 0.04604 def
+/eyesquint 0.154857759628 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.396944444444 def
+/eyeangle 0.681463946487 def
+/smile 0.28188 def
+/eyesquint 0.426312430566 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.385744444444 def
+/eyeangle 0.599859384887 def
+/smile 0.09572 def
+/eyesquint 0.627293292702 def
+2 200.000000 500.000000  face
+
+/headsquat 0.492844444444 def
+/eyeangle 0.710684400257 def
+/smile 0.333 def
+/eyesquint 0.493921450391 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.581322222222 def
+/eyeangle 0.871824000827 def
+/smile 0.17624 def
+/eyesquint 0.00474281730414 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.744711111111 def
+/eyeangle 0.881999390105 def
+/smile 0.11584 def
+/eyesquint 0.82824232385 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.5553 def
+/eyeangle 0.710442086532 def
+/smile 0.1654 def
+/eyesquint 0.82709640826 def
+2 200.000000 500.000000  face
+
+/headsquat 0.428033333333 def
+/eyeangle 0.695689808442 def
+/smile 0.2074 def
+/eyesquint 0.168545084734 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.640133333333 def
+/eyeangle 0.864888928727 def
+/smile 0.12588 def
+/eyesquint 0.236695231366 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.552455555556 def
+/eyeangle 0.797394063899 def
+/smile 0.39936 def
+/eyesquint 0.387765103349 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.384533333333 def
+/eyeangle 0.768642374548 def
+/smile 0.08148 def
+/eyesquint 0.271359177972 def
+2 200.000000 500.000000  face
+
+/headsquat 0.5509 def
+/eyeangle 0.730984294274 def
+/smile 0.31124 def
+/eyesquint 0.230806498472 def
+2 500.000000 500.000000  face
+
+400 400 moveto
+/headsquat 0.605888888889 def
+/eyeangle 0.791119235862 def
+/smile 0.17388 def
+/eyesquint 0.00572957795131 def
+2 200.000000 200.000000  face
+
+200 200 moveto
+/headsquat 0.642377777778 def
+/eyeangle 0.889220542714 def
+/smile 0.03116 def
+/eyesquint 0.275401713526 def
+2 500.000000 200.000000  face
+
+400 200 moveto
+showpage
+200 400 moveto
+/headsquat 0.551655555556 def
+/eyeangle 0.791082593639 def
+/smile 0.49928 def
+/eyesquint 0.0544946525147 def
+2 200.000000 500.000000  face
+
+/headsquat 0.751777777778 def
+/eyeangle 0.935134562671 def
+/smile 0.22136 def
+/eyesquint 0.202858890465 def
+2 500.000000 500.000000  face
+
+400 400 moveto

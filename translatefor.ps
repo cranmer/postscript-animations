@@ -1,0 +1,26 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 0 0 3000 80
+% Draw a box at 72, 72 using translate
+% operator box: xcoord ycoord box -
+% Creates one inch box at xcoord, ycoord
+/box {
+   newpath
+   moveto
+   1 setlinewidth
+   10 0 rlineto
+   0 72 rlineto
+   -10 0 rlineto
+   closepath
+} def
+gsave                           % Preserve the old coordinates
+0 1 300 {              % Go from 0 to 360 degrees in 10 degree steps
+  70 0 translate               % Set origin to (72, 72)
+  0 5 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore                        % Restore the old coordinates
+0 1 300 {              % Go from 0 to 360 degrees in 10 degree steps
+  130 0 translate               % Set origin to (72, 72)
+  0 5 box fill                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore
+%showpage

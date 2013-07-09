@@ -1,0 +1,90 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 0 0 30000 800
+% Draw a box at 72, 72 using translate
+% operator box: xcoord ycoord box -
+% Creates one inch box at xcoord, ycoord
+/box {
+   newpath
+   moveto
+%   1 setlinewidth
+   0 100 rlineto
+%   closepath
+} def
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+gsave                           % Preserve the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  10 0 translate               % Set origin to (72, 72)
+  0 50 box stroke                % Draw the box at the new origin
+  5 setlinewidth
+} for                   % Iterate over angles
+grestore                        % Restore the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  10.01 0 translate               % Set origin to (72, 72)
+  0 0 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  10.1 0 translate               % Set origin to (72, 72)
+  0 0 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+0 200 translate
+gsave                           % Preserve the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  10 0 translate               % Set origin to (72, 72)
+  0 50 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore                        % Restore the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  31.4159265 2 div 0 translate               % Set origin to (72, 72)
+  0 0 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore
+%showpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+0 400 translate
+
+gsave                           % Preserve the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  10 0 translate               % Set origin to (72, 72)
+  0 50 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore                        % Restore the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  16.1803399 0 translate               % Set origin to (72, 72)
+  0 0 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore
+%showpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+0 600 translate
+
+gsave                           % Preserve the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  31.4159265 2 div 0 translate               % Set origin to (72, 72)
+  0 50 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore                        % Restore the old coordinates
+0 1 3000 {              % Go from 0 to 360 degrees in 10 degree steps
+  1 setlinewidth
+  16.1803399 0 translate               % Set origin to (72, 72)
+  0 0 box stroke                % Draw the box at the new origin
+} for                   % Iterate over angles
+grestore
+%showpage
